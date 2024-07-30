@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <%- include("./partials/nav.ejs") %>
+    <h2>Yangi foydalanuvchi qo`shish</h2>
+    <form action="/add-user" method="post" id="post-form">
+      <label for="username">User name</label>
+      <input type="text" name="username" id="username" /> <br /><br />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" /> <br /><br />
+
+      <button type="submit">Qo`shish</button>
+
+     
+    </form>
+  </body>
+</html>
+

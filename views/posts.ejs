@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <%- include("./partials/nav.ejs") %>
+    <h1>Barcha postlar ro'yxati</h1>
+    <div class="posts">
+        <% posts.forEach(post => { %>
+            <p><a href="/post/<%= post.id %>">UserId: <%= post.userId %> Id: <%= post.id %> Title: <%= post.title %></a></p>
+        <% }); %>
+    </div>
+        <h3><a href="/add-post">Yangi post qo`shish</a></h3>
+
+  </body>
+</html>
